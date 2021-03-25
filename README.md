@@ -10,7 +10,7 @@ WARNING: If you have already downloaded Pokemon Ultra Moon (not using a cart), m
 2. Your 3DS SD Card must have at least 8GB of space.
 3. A PC with at least 12GB of space. (The rom hack won't take all this space for long, it will be reclaimed soon afterwards.)
 4. An SD to USB adapter so you can actually use the SD card on your computer. (Or if you have an SD card slot on your PC, that works too)
-5. GodMode9, Checkpoint, and HackingToolkit9DS. (You should have the first two, the third is at https://github.com/Asia81/HackingToolkit9DS-Deprecated-/releases).
+5. GodMode9, Checkpoint, and HackingToolkit9DS or DotNet3dsToolkit. (You should have the first two, the third is at https://github.com/Asia81/HackingToolkit9DS-Deprecated-/releases).
 
 
 # Extract A Clean a083 Garc From A Rom #
@@ -57,6 +57,10 @@ After doing one of the three, follow one of the below depending on which game it
 7. Rename the file to "3", then move the now patched file back to your 3DS.
 
 
+# Patching a083 with xDelta #
+1. Get xDelta patcher from above (https://www.romhacking.net/utilities/704/) and apply the Stars_083_v0.x.xdelta patch to the a083 garc (named "3") extracted from a legitimate Ultra Moon copy (or converted from Ultra Sun) earlier.
+2. Keep track of your newly patched garc, it should be 473,143kb. 
+
 
 # While You Wait... #
 While you're waiting to get your a083 garc, download Pokemon Star from that site. (If you already have it, skip this.) (Search "pokemon star rom", and you'll eventually find what you need.) Both will take a while, so it's better to knock them both out now.
@@ -79,6 +83,12 @@ While you're waiting to get your a083 garc, download Pokemon Star from that site
 14. Delete the ROM that you built. (DO NOT DELETE THE CIA!)
 15. If you got Ultra Moon by downloading it off the eShop, backup the save file through Checkpoint and delete the game
 
+# Creating The Rom With DotNet3dsToolkit #
+1. Download evandixon's DotNet3dsToolkit from https://github.com/evandixon/DotNet3dsToolkit/releases/tag/1.4.6.
+2. Run DotNet3dsToolkit from ToolkitForm.exe and dump your acquired *Pokemon Stars* rom from the steps above. (Make sure your output directory is a clean folder!)
+3. Replace the code and banner files in ExeFS making sure to add .bin as an extension, take your patched a083 garc from above and replace the existing a083.
+4. Rebuild with DotNet3dsToolkit making sure to select build, and adding the extension ".cia" to whatever you choose to name it.
+5. Install using FBI or custom-install (https://github.com/ihaveamac/custom-install/releases/tag/2.0). (Make sure to backup your save!!!)
 
 # Installation & Cleanup #
 1. If you picked the correct deity, or got super lucky, then this went of without a hitch! As Gamechamp3000 said in her first video about a low-shot run of Octo Expansion, "Turns out all you needed to conquer death was a spoonful of elbow grease and a freighter loaded with pain and suffering!"
@@ -98,7 +108,6 @@ While you're waiting to get your a083 garc, download Pokemon Star from that site
 2. Delete Pokemon Star from your 3DS.
 3. If you play the digital version of UM, redownload it.
 4. If you play the digital version of UM, load the backup of your Ultra Moon save.
-
 
 # Credits #
 Nintendo - Publisher of Ultra Sun and Ultra Moon
@@ -120,3 +129,5 @@ Thinking about trying to fix a083 garc: Some day...
 v0.1.1 (11/1/20): Added US support via an xdelta patch.
 
 Still v0.1.1 (12/31/20): AquaSamurott begins fixing a083 garc. Never asked them to do so, but glad they're doing it nonetheless.\
+
+v0.1.2 (3/25/21): First prerelease of fixed a083. 

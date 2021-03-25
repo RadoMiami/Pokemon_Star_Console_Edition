@@ -15,3 +15,5 @@ This file contains the struggles I have had when trying to turn Pokemon Star int
 10/13/2020, 3:42 PM: Was able to shrink a Pokemon Star rom by one byte. However, I still got that infinite grey screen. Maybe if I find a guide somewhere of how to patch the game from before the patch version was taken down, I could make a breakthrough...
 
 Spooky Day, 11:32 AM: I was finally able to make Pokemon Star playable! Unfortunately, it isn't in the format of a LayeredFS patch, but a console-playable ROM/CIA is the next best thing. In the future, I might mess around with a083 garc to try and make that console playable. If that's possible, then that would mean that my service is done. Until then, signing off.
+
+24/7: a083 is a pain to change.
